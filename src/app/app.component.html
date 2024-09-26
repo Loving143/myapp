@@ -1,5 +1,18 @@
-<h1>This is hello world</h1>
-<h3>This is not acceptable </h3>
-<button class="btn btn-danger">Do not click</button>
-<h1>This is too danger</h1>
-<i class="fa fa-edit"></i>
+<div class="card">
+    <h5 class="card-header">User RegistrationForm</h5>
+    <div class="card-body">
+        <form [formGroup] = "registerForm">
+            <div class="row">
+                <div class="form-group col">
+                    <label>Title</label>
+                    <select class="form-control" formControlName = "title">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Ms">Ms</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

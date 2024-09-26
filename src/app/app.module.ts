@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule} from '@angular/platform-browser'
 import { AppComponent } from './app.component';
 import {ToastrModule} from 'ngx-toastr';
+import {ReactiveFormsModule} from '@angular/forms'
+import {  HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
     declarations : 
@@ -10,7 +13,9 @@ import {ToastrModule} from 'ngx-toastr';
     ],
     imports :[
         BrowserModule,
-        ToastrModule.forRoot()
+        ToastrModule.forRoot(),
+        ReactiveFormsModule,
+        HttpClientModule
     ]
 })
 
